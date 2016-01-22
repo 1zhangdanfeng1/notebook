@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FFFD4"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp" >
+    <LinearLayout 
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="60dp"
+            android:background="#00ff00"
+            />
+        <ImageView 
+        android:id="@+id/image"
+        android:layout_marginLeft="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nurse_visit2"
+       
+        />
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="60dp"
+            android:background="#00ff00"
+            />
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_alignLeft="@id/left"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:paddingLeft="5dp"
+        android:textColor="#10f0f0"
+        android:text="标题"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:textColor="#cc00ff"
+        android:text="2013.10.23 16:07" />
+        
+        >
+        </LinearLayout>
+    
+
+</RelativeLayout>
